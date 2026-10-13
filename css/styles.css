@@ -386,7 +386,7 @@ h1 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 12%;
+  object-position: center 20%;
   border-radius: 50%;
   border: 3px solid #0a1218;
   filter: grayscale(1) contrast(1.08) brightness(1.03);
