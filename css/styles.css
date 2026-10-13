@@ -635,13 +635,13 @@ h2 {
 }
 
 .job-head .org {
-  margin-top: 0.25rem;
+  margin-top: 0.4rem;
   color: var(--copper);
   font-weight: 500;
 }
 
 .job-head .when {
-  margin-top: 0.2rem;
+  margin-top: 0.35rem;
   color: var(--muted);
   font-size: 0.92rem;
 }
