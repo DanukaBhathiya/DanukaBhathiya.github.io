@@ -613,15 +613,9 @@ h2 {
 
 .role-head {
   display: flex;
-  flex-wrap: nowrap;
-  align-items: baseline;
-  gap: 0.45rem 0.65rem;
-  overflow-x: auto;
-  scrollbar-width: none;
-}
-
-.role-head::-webkit-scrollbar {
-  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.28rem;
 }
 
 .role-head h3,
@@ -632,12 +626,7 @@ h2 {
 }
 
 .role-head h3 {
-  font-size: 1.2rem;
-}
-
-.role-sep {
-  color: var(--muted);
-  flex: 0 0 auto;
+  font-size: 1.25rem;
 }
 
 .record-list li {
@@ -961,17 +950,13 @@ h2 {
     display: grid;
   }
 
-  .role-head {
-    gap: 0.35rem 0.5rem;
-  }
-
   .role-head h3 {
-    font-size: 1.05rem;
+    font-size: 1.15rem;
   }
 
   .role-head .org,
   .role-head .when {
-    font-size: 0.88rem;
+    white-space: normal;
   }
 
   h1 {
