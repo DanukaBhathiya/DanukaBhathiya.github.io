@@ -403,7 +403,7 @@ h1 {
 
 h2 {
   margin: 0;
-  font-size: clamp(2.05rem, 4vw, 3.15rem);
+  font-size: clamp(1.75rem, 3.2vw, 2.55rem);
   color: var(--ivory);
 }
 
@@ -717,6 +717,12 @@ h2 {
   50% {
     transform: scale(1.03);
     opacity: 1;
+  }
+}
+
+@media (min-width: 861px) {
+  .section-head h2 {
+    white-space: nowrap;
   }
 }
 
