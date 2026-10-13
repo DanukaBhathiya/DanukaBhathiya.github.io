@@ -392,14 +392,6 @@ h1 {
   filter: grayscale(1) contrast(1.08) brightness(1.03);
 }
 
-.portrait figcaption {
-  margin-top: 1.5rem;
-  color: var(--muted);
-  font-size: 0.84rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
 .section {
   padding: 1.25rem 0 3.75rem;
 }
