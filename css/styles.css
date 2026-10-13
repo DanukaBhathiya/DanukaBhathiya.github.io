@@ -254,7 +254,7 @@ h1 {
   line-height: 1.05;
 }
 
-.role {
+.hero-role {
   display: inline-flex;
   margin: 1.15rem 0 0;
   padding: 0.4rem 0.85rem;
@@ -484,7 +484,7 @@ h2 {
 }
 
 .skill-grid article,
-.role,
+.job,
 .record-list,
 .contact-list a,
 .project-list a {
@@ -505,7 +505,7 @@ h2 {
 }
 
 .skill-grid h3,
-.role h3,
+.job h3,
 .record-list h3 {
   margin: 0;
   font-size: 1.25rem;
@@ -553,7 +553,7 @@ h2 {
 }
 
 .skill-grid ul,
-.role ul,
+.job ul,
 .timeline,
 .project-list,
 .record-list,
@@ -586,7 +586,8 @@ h2 {
   opacity: 0.45;
 }
 
-.role {
+.job {
+  display: block;
   position: relative;
   margin-left: 1.4rem;
   padding: 1.4rem 1.45rem 1.55rem;
@@ -594,7 +595,7 @@ h2 {
   transition: border-color 0.25s ease;
 }
 
-.role::before {
+.job::before {
   content: "";
   position: absolute;
   left: -1.28rem;
@@ -607,39 +608,40 @@ h2 {
   box-shadow: 0 0 0 4px rgba(201, 168, 110, 0.12);
 }
 
-.role:hover {
+.job:hover {
   border-color: var(--line-strong);
 }
 
-.role-head {
+.job-head {
   display: block;
   width: 100%;
   margin: 0 0 0.85rem;
 }
 
-.role-head h3,
-.role-head .org,
-.role-head .when {
+.job-head h3,
+.job-head .org,
+.job-head .when {
   display: block;
-  width: 100%;
+  width: max-content;
+  max-width: 100%;
   margin: 0;
-  line-height: 1.35;
+  line-height: 1.4;
   white-space: nowrap;
 }
 
-.role-head h3 {
+.job-head h3 {
   font-size: 1.25rem;
   color: var(--ivory);
 }
 
-.role-head .org {
-  margin-top: 0.2rem;
+.job-head .org {
+  margin-top: 0.25rem;
   color: var(--copper);
   font-weight: 500;
 }
 
-.role-head .when {
-  margin-top: 0.15rem;
+.job-head .when {
+  margin-top: 0.2rem;
   color: var(--muted);
   font-size: 0.92rem;
 }
@@ -661,19 +663,19 @@ h2 {
   font-size: 0.9rem;
 }
 
-.role ul {
-  margin-top: 1rem;
+.job ul {
+  margin-top: 0;
   display: grid;
   gap: 0.55rem;
 }
 
-.role li {
+.job li {
   position: relative;
   padding-left: 1rem;
   color: var(--muted);
 }
 
-.role li::before {
+.job li::before {
   content: "";
   position: absolute;
   left: 0;
@@ -906,11 +908,11 @@ h2 {
     display: none;
   }
 
-  .role {
+  .job {
     margin-left: 0;
   }
 
-  .role::before {
+  .job::before {
     display: none;
   }
 }
@@ -964,12 +966,12 @@ h2 {
     display: grid;
   }
 
-  .role-head h3 {
+  .job-head h3 {
     font-size: 1.12rem;
   }
 
-  .role-head .org,
-  .role-head .when {
+  .job-head .org,
+  .job-head .when {
     font-size: 0.9rem;
     white-space: nowrap;
   }
