@@ -880,13 +880,51 @@ h2 {
   .hero {
     grid-template-columns: 1fr;
     min-height: 0;
-    text-align: left;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .hero-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    align-items: center;
+  }
+
+  .lede {
+    margin-inline: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .facts {
+    width: min(100%, 26rem);
+    margin-inline: auto;
+  }
+
+  .facts div {
+    text-align: center;
   }
 
   .portrait {
     order: -1;
     width: min(100%, 220px);
-    justify-self: start;
+    justify-self: center;
+  }
+
+  .section-head {
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .prose {
+    margin-inline: auto;
+    text-align: center;
   }
 
   .split {
@@ -897,11 +935,57 @@ h2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .skill-grid article,
+  .skill-grid h3 {
+    justify-content: center;
+    text-align: center;
+  }
+
   .project-list,
   .project-list li:nth-child(-n + 2),
   .project-list li:nth-child(n + 3) {
     grid-template-columns: 1fr 1fr;
     grid-column: auto;
+  }
+
+  .project-list a {
+    align-items: center;
+    text-align: center;
+  }
+
+  .job-head {
+    text-align: center;
+  }
+
+  .job-head h3,
+  .job-head .org,
+  .job-head .when {
+    margin-inline: auto;
+  }
+
+  .job ul {
+    text-align: left;
+  }
+
+  .record-list li {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-list a {
+    align-items: center;
+    text-align: center;
+  }
+
+  .references,
+  .site-footer {
+    text-align: center;
+  }
+
+  .site-footer {
+    flex-direction: column;
+    align-items: center;
   }
 
   .timeline::before {
@@ -945,6 +1029,7 @@ h2 {
   #site-nav a {
     padding: 0.75rem 0.85rem;
     border-radius: 0.7rem;
+    text-align: center;
   }
 
   #site-nav a:not(.nav-contact)::after {
@@ -981,11 +1066,15 @@ h2 {
   }
 
   .portrait {
-    width: min(100%, 210px);
+    width: min(100%, 200px);
   }
 
   .portrait-frame::after {
     inset: -18px;
+  }
+
+  .section-head h2 {
+    white-space: normal;
   }
 }
 
